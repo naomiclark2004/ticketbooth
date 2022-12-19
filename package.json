@@ -6,7 +6,8 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "build": "webpack --mode production"
   },
   "dependencies": {
     "@expo/webpack-config": "^0.17.2",
@@ -24,7 +25,8 @@
     "react-native-web": "~0.18.9"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.9"
+    "@babel/core": "^7.12.9",
+    "webpack-cli": "^5.0.1"
   },
   "private": true
 }
