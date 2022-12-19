@@ -1,20 +1,33 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import * as React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import IonIcon from 'react-native-vector-icons/Ionicons';
+import SettingsScreen from './SettingsScreen';
+import Home from './HomeScreen';
+import SearchScreen from './SearchScreen';
+import FavScreen from './FavScreen';
+import TicketScreen from './TicketScreen';
 
-export default function App() {
+
+const Tab = createBottomTabNavigator();
+
+const App = () => {
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <Tab.Navigator>
+        <Tab.Screen name="Home" component={Home} options={{ tabBarShowLabel: false, tabBarIcon: () => <MaterialCommunityIcons  name="home-outline" size={20} />, tabBarActiveTintColor: "#355367", headerStyle: { backgroundColor: '#B9C2C9' }, tabBarStyle: { backgroundColor: '#B9C2C9' }}} />
+        <Tab.Screen name="Search" component={SearchScreen} options={{ tabBarShowLabel: false,  tabBarIcon: () => <MaterialCommunityIcons  name="magnify" size={20} />, tabBarActiveTintColor: "#355367", headerStyle: { backgroundColor: '#B9C2C9' }, tabBarStyle: { backgroundColor: '#B9C2C9' }, headerLeft: () => <IonIcon name="chevron-back" size={20} style={{ marginLeft: 10 }} onPress={() => navigation.navigate('Home')} />}} />
+        <Tab.Screen name="Ticket" component={TicketScreen} options={{ tabBarShowLabel: false, tabBarIcon: () => <MaterialCommunityIcons name="ticket-outline" size={20} style={{transform: [{ rotate: '90deg'}]}}/>, tabBarActiveTintCor: "#355367", headerStyle: { backgroundColor: '#B9C2C9' }, tabBarStyle: { backgroundColor: '#B9C2C9' }, headerLeft: () => <IonIcon name="chevron-back" size={20} style={{ marginLeft: 10 }} onPress={() => navigation.navigate('Home')} /> }} />
+        <Tab.Screen name="Favorites" component={FavScreen} options={{ tabBarShowLabel: false, tabBarIcon: () => <MaterialCommunityIcons  name="heart-outline" size={20} />, tabBarActiveTintColor: "#355367", headerStyle: { backgroundColor: '#B9C2C9' }, tabBarStyle: { backgroundColor: '#B9C2C9' }, headerLeft: () => <IonIcon name="chevron-back" size={20} style={{ marginLeft: 10 }} onPress={() => navigation.navigate('Home')} /> }} />
+        <Tab.Screen name="My Account" component={SettingsScreen} options={{ tabBarShowLabel: false, tabBarIcon: () => <MaterialCommunityIcons  name="account-circle-outline" size={20} />,tabBarActiveTintColor: "#355367", headerStyle: { backgroundColor: '#B9C2C9' }, tabBarStyle: { backgroundColor: '#B9C2C9' }, headerLeft: () => <IonIcon name="chevron-back" size={20} style={{ marginLeft: 10 }} onPress={() => navigation.navigate('Home')} /> }} />
+      </Tab.Navigator>
+    </NavigationContainer>
   );
+
+
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
+export default App;
