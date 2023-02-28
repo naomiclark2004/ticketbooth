@@ -48,7 +48,7 @@ function TrendingScreen() {
                     return (
                         <View key={index} style={styles.contain}>
                             <Image style={styles.img} source={{ uri: image }}></Image>
-                            <Text style={styles.text} onPress={() => Linking.openURL(item.url)}>{item.performers[0].name}<br></br><span style={{ fontSize: '10px' }}>{time}</span></Text>
+                            <Text style={styles.text} onPress={() => Linking.openURL(item.url)}>{item.performers[0].name}{"\n"}<Text style={{ fontSize: '10px' }}>{time}</Text></Text>
                         </View>
                     )
                 })}

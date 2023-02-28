@@ -1,7 +1,6 @@
 import * as React from 'react';
-import { Text, View, StyleSheet } from 'react-native';
+import { Text, View, StyleSheet, ScrollView } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
-import { ScrollView } from 'react-native-web';
 function TermsPage({ navigation }) {
 
     const handle = () => {
@@ -15,13 +14,13 @@ function TermsPage({ navigation }) {
                 <Text>Terms of Use</Text>
                 <View style={styles.box}>
                     <Text>
-                        Welcome! The following are the terms of use ("Terms") that govern your use of Ticket Booth mobile applications.<br></br><br></br>NOTICE REGARDING FUTURE CHANGES TO TERMS:<br></br><br></br>We may make changes to the Terms at any time. Any changes we make will be effective immediately when we post a revised version of the Terms on the Site. The "Last Updated” date above will tell you when the Terms were last revised. By continuing to use this Site after that date, you agree to the changes.
-                        To the extent that these Terms differ from a prior version of the Terms which you previously agreed to, this version of the Terms supersedes and governs.<br></br><br></br>NOTICE REGARDING ARBITRATION AND CLASS ACTION WAIVER: <br></br><br></br>The Terms contain an arbitration agreement and class action waiver Section 17. Specifically, you and we agree that any dispute or claim relating in any way to the Terms, your use of the Site, or products or services sold, distributed, issued, or serviced by us or through us, will be resolved by binding, individual arbitration, rather than in court. By agreeing to individual arbitration, you and we each waive any right to participate in a class action lawsuit or class-wide arbitration. This agreement and waiver—along with some limited exceptions—is explained in Section 17, below.
+                        Welcome! The following are the terms of use ("Terms") that govern your use of Ticket Booth mobile applications.{"\n"}{"\n"}NOTICE REGARDING FUTURE CHANGES TO TERMS:{"\n"}{"\n"}We may make changes to the Terms at any time. Any changes we make will be effective immediately when we post a revised version of the Terms on the Site. The "Last Updated” date above will tell you when the Terms were last revised. By continuing to use this Site after that date, you agree to the changes.
+                        To the extent that these Terms differ from a prior version of the Terms which you previously agreed to, this version of the Terms supersedes and governs.{"\n"}{"\n"}NOTICE REGARDING ARBITRATION AND CLASS ACTION WAIVER: {"\n"}{"\n"}The Terms contain an arbitration agreement and class action waiver Section 17. Specifically, you and we agree that any dispute or claim relating in any way to the Terms, your use of the Site, or products or services sold, distributed, issued, or serviced by us or through us, will be resolved by binding, individual arbitration, rather than in court. By agreeing to individual arbitration, you and we each waive any right to participate in a class action lawsuit or class-wide arbitration. This agreement and waiver—along with some limited exceptions—is explained in Section 17, below.
                     </Text>
                     <Text>
-                        <br></br><br></br>
+                    {"\n"}{"\n"}
                         1. Account Registration
-                        <br></br><br></br>
+                        {"\n"}{"\n"}
                         You may browse the Site without registering for an account. You will be required to register for an account to use certain features of the Site, such as reserving or purchasing a ticket. Your account username may not include the name of another person with the intent to impersonate that person, or be offensive, vulgar, or obscene. Your account username and password are personal to you. You will be responsible for the confidentiality and use of your username and password, and for all activities (including purchases) that are conducted through your account. You may not transfer or sell access to your account. We will not be liable for any harm related to disclosure of your username or password or the use by anyone else of your username or password. You may not use another user’s account without that user’s permission. You will immediately notify us in writing if you discover any unauthorized use of your account or other account-related security breach. We may require you to change your username and/or password if we believe your account is no longer secure, or if we receive a complaint that your username violates someone else’s rights. You will have no ownership in your account or your username. We may refuse registration, cancel an account, or deny access to the Site for any reason.
                         You agree that you will comply with all applicable laws, rules and regulations, and that you will not:
 
@@ -49,7 +48,7 @@ function TermsPage({ navigation }) {
                     </Text>
 
                     <Text>
-                        <br></br><br></br> Please review our Purchase Policy, which (in addition to the Terms) will govern your purchase of any tickets or other products through the Site, including any refunds or exchanges. We may impose conditions on your use of any coupon, promotional code, credit, or gift card. You will pay all charges incurred by you or any users of your account and credit card (or other applicable payment mechanism) at the price(s) in effect when such charges are incurred, including any applicable taxes. You may only use credit or debit cards, gift cards, or vouchers that belong to you or to people who expressly authorize you to use such payment methods. You may not attempt to conceal your identity by using multiple Internet Protocol addresses or email addresses, or by any other means, to conduct transactions on the Site.
+                    {"\n"}{"\n"} Please review our Purchase Policy, which (in addition to the Terms) will govern your purchase of any tickets or other products through the Site, including any refunds or exchanges. We may impose conditions on your use of any coupon, promotional code, credit, or gift card. You will pay all charges incurred by you or any users of your account and credit card (or other applicable payment mechanism) at the price(s) in effect when such charges are incurred, including any applicable taxes. You may only use credit or debit cards, gift cards, or vouchers that belong to you or to people who expressly authorize you to use such payment methods. You may not attempt to conceal your identity by using multiple Internet Protocol addresses or email addresses, or by any other means, to conduct transactions on the Site.
 
                         You will not hold us liable if you do not comply with laws related to your transactions. We may provide law enforcement with information you provide to us related to your transactions to assist in any investigation or prosecution of you.
 
@@ -59,10 +58,10 @@ function TermsPage({ navigation }) {
                     </Text>
 
                     <Text>
-                    <br></br><br></br>If you have any questions, comments, or complaints regarding the Terms or the Site, please contact us at:
-                    <br></br><br></br>Ticket Booth, Inc.
-                    <br></br>(802) 644-8250
-                    <br></br>TicketBoothLegal@gmail.com
+                    {"\n"}{"\n"}If you have any questions, comments, or complaints regarding the Terms or the Site, please contact us at:
+                    {"\n"}vTicket Booth, Inc.
+                    {"\n"}(802) 644-8250
+                    {"\n"}TicketBoothLegal@gmail.com
                     </Text>
                 </View>
             </View>

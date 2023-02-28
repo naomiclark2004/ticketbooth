@@ -1,7 +1,6 @@
 import * as React from 'react';
-import { Text, View, StyleSheet, TextInput } from 'react-native';
+import { Text, View, StyleSheet, TextInput, Button } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
-import { Button } from 'react-native-web';
 
 function FormPage({ navigation }) {
     const handle = () => {

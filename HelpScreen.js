@@ -16,9 +16,9 @@ function HelpScreen({ navigation }) {
             <View style={styles.box}>
                 <Text>
                 If you have any questions, comments, or complaints, please contact us at:
-                <br></br><br></br>Ticket Booth, Inc.
-                <br></br>(802) 644-8250
-                <br></br>TicketBoothLegal@gmail.com
+                {"\n"}{"\n"}Ticket Booth, Inc.
+                {"\n"}(802) 644-8250
+                {"\n"}TicketBoothLegal@gmail.com
                 </Text>
             </View>
         </View>

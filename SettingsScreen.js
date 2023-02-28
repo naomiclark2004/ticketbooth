@@ -64,7 +64,7 @@ function Settings({ navigation }) {
                 <Icon name="chevron-forward" size={20} color="#A7A7A7" onPress={() => navigation.navigate('Feedback')} />
             </View>
             <View >
-                <Text style={{ textAlign: 'center', fontSize: '12px', paddingTop: '10px' }}> &#169; Ticketbooth, Inc. All Rights Reserved.</Text>
+                <Text style={{ textAlign: 'center', fontSize: '12px', paddingTop: 10 }}> &#169; Ticketbooth, Inc. All Rights Reserved.</Text>
             </View>
         </View>
     );

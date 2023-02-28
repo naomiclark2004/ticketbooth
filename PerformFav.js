@@ -34,17 +34,17 @@ function PerformFav({navigation}) {
                 <Animated.View style={{ transform: [{ scale: anim.current}]}}>
                     <Icon name="heart" size={75} color="#CB8E97" />
                 </Animated.View>
-                <Text style={{ fontWeight: 'bold', fontSize: '20px', width: '200px', textAlign: 'center', marginBottom: '20px', marginTop: '30px'}}>You’re not tracking any Performers</Text>
-                <Text style={{ fontWeight: 100, fontSize: '15px', width: '200px', textAlign: 'center'}}>Sign up or Sign in to view your favorites </Text>
+                <Text style={{ fontWeight: 'bold', fontSize: '20px', width: '90%', textAlign: 'center', marginBottom: '20px', marginTop: '30px'}}>You're not tracking any Performers</Text>
+                <Text style={{ fontSize: '15px', width: '90%', textAlign: 'center'}}>Sign up or Sign in to view your favorites </Text>
             </View>
 
             <View style={{ display: 'flex', flexDirection: 'row', marginTop: '50px', columnGap: '20px' }}>
                 <Pressable style={{ backgroundColor: '#A7A7A7', borderRadius: 5, }} onPress={() => navigation.navigate('My Account')}>
-                    <Text style={{ paddingLeft: '30px', paddingRight: '30px', paddingTop: '15px', paddingBottom: '15px', color: 'white' }}>Sign Up</Text>
+                    <Text style={{ paddingLeft: 20, paddingRight: 20, paddingTop: 15, paddingBottom: 15, color: 'white' }}>Sign Up</Text>
                 </Pressable>
 
                 <Pressable style={{ backgroundColor: '#A7A7A7', borderRadius: 5, }} onPress={() => navigation.navigate('My Account')}>
-                    <Text style={{ paddingLeft: '30px', paddingRight: '30px', paddingTop: '15px', paddingBottom: '15px', color: 'white'}}>Sign In</Text>
+                    <Text style={{ paddingLeft: 20, paddingRight: 20, paddingTop: 15, paddingBottom: 15, color: 'white'}}>Sign In</Text>
                 </Pressable>
             </View>
         </View>

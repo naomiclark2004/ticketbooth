@@ -29,5 +29,16 @@
     "@babel/core": "^7.12.9",
     "webpack-cli": "^5.0.1"
   },
-  "private": true
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naomiclark2004/ticketbooth.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/naomiclark2004/ticketbooth/issues"
+  },
+  "homepage": "https://github.com/naomiclark2004/ticketbooth#readme",
+  "description": ""
 }
